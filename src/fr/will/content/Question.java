@@ -1,3 +1,4 @@
+package fr.will.content;
 
 public abstract class Question {
 	public static final String fin = " ?";
