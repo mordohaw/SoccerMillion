@@ -4,7 +4,7 @@ public class Question {
 	public static final String fin = " ?";
 	private String theme;
 	private String content;
-	private Answer questionAnswers[]=new Answer[5];
+	private Answer questionAnswers[]=new Answer[4];
 	private int level;
 	private int num;
 	

@@ -8,9 +8,16 @@ public class Questionnaire {
 	Question Q;
 	
 	public Questionnaire(){
-		listeQuestions.add(createQuestion("Angleterre","Qui a marqué le but du titre de Manchester city en "
-				+ "2012 ?"
-				, Answer tab[] = {createAnswer(false,"Touré")}, 2));
+		Answer tabQ1[]=new Answer[4];
+		
+		tabQ1[0] = createAnswer(false,"Touré");
+		tabQ1[1] = createAnswer(true,"Aguero");
+		tabQ1[2] = createAnswer(false,"Silva");
+		tabQ1[3] = createAnswer(false,"Dzeko");
+		
+		listeQuestions.add(createQuestion("Angleterre","Qui a marqu� le but du titre de Manchester city en "
+				+ "2012"
+				, tabQ1, 2));
 	}
 	
 	private Question createQuestion(String theme,String content, Answer[] tabAnswer, int difficulty){
