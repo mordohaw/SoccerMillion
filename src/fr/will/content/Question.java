@@ -5,6 +5,7 @@ public abstract class Question {
 	private String theme;
 	private Answer questionAnswers[]=new Answer[5];
 	private int level;
+	private int num;
 	
 	public Question(String theme, Answer[] tabAnswer, int difficulty){
 		this.questionAnswers=tabAnswer;
