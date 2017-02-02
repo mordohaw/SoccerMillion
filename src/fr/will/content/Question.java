@@ -4,6 +4,10 @@ public class Question {
 	public static final String fin = " ?";
 	private String theme;
 	private String content;
+	public String getContent() {
+		return content;
+	}
+
 	private Answer questionAnswers[]=new Answer[4];
 	private int level;
 	private int num;

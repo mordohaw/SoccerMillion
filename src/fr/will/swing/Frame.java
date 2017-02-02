@@ -1,5 +1,8 @@
 package fr.will.swing;
 
+import java.awt.Button;
+
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public abstract class Frame extends JFrame {
