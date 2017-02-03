@@ -1,5 +1,8 @@
 package fr.will.swing;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -23,6 +26,19 @@ public class MainFramePanel extends GlobalPanel  {
 				for(int i=0;i<4;i++){
 					combobox.addItem(questionnaire1.getAnsTabQ1(i).getContent());
 				}
+
+				button1.addActionListener(new ActionListener(){
+
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						 SmFrame Fr2 = new SmFrame();
+						 Fr2.setVisible(true); // Main Form to show after the Login Form..
+
+
+
+					}
+
+				});
 
 
 				this.add(button1);
